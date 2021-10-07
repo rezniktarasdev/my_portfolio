@@ -1,0 +1,44 @@
+.banner {
+   width: 100%;
+   min-height: 100vh;
+   position: relative;
+   background:url('../img/bg.jpg') no-repeat center right/cover;
+   padding-top: 205px;
+
+   &_title {
+      width: 590px;
+      margin-top: 10px;
+   }
+
+   &_btn {
+      margin-top: 25px;
+      display: flex;
+      width: 250px;
+      justify-content: space-between;
+      align-items: center;
+
+   }
+}
+
+.banner_wrapper{
+   @extend .site_width;
+}
+
+.button_link {
+   color: $color06;
+   font-weight: bold;
+   padding: 12px 25px;
+   background: transparent;
+   text-transform: uppercase;
+   &:hover{
+      text-decoration: none;
+      color: $color06;
+   }
+}
+
+.banner_uptitle{
+   position: relative;
+   padding-left: 10px;
+   z-index: 2;
+   @include before_circle;
+}

@@ -1,0 +1,48 @@
+.sidepanel {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center ;
+   height: 400px;
+   position: fixed;
+   top: 230px;
+   left: 50px;
+   z-index: 3;
+
+   &_link{
+      width:30px;
+      height:30px;
+      img {
+         margin: 0 auto;
+         height:auto;
+         width:100%;
+      }
+   }
+
+   &_divider{
+      height: 70px;
+      width: 2px;
+      background-color: $color06;
+
+   }
+   &_text{
+      height: 170px;
+      width: 25px;
+      span {
+         transform: rotate(-90deg) translate(-30%, -310%);
+         display: block;
+         width: 170px;
+         font-size: 1.6rem;
+         line-height: 24px;
+         font-weight: bold;
+      }
+   }
+}
+
+.sidepanel_link.linkedin {
+   transform: rotate(-90deg);
+   img {
+      border-radius: 15%;
+   }  
+}
+
