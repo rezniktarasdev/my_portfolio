@@ -1,0 +1,16 @@
+.about {
+   @extend .site_width;
+
+   padding-top: 120px;
+   display: flex;
+
+   justify-content: space-evenly;
+
+   &_img_wrapper{
+      width: 40%;
+   }
+   &_description_wrapper{
+      width: 50%;
+   }
+  
+}
