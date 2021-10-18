@@ -2,15 +2,62 @@
    @extend .site_width;
 
    padding-top: 120px;
+   padding-bottom: 120px;
    display: flex;
 
    justify-content: space-evenly;
+   align-items: flex-start;
 
    &_img_wrapper{
-      width: 40%;
+      width: 35%;
    }
    &_description_wrapper{
-      width: 50%;
+      width: 55%;
+   } 
+   &_description{
+      .divider{
+         margin-top: 0;
+      }
    }
-  
+   &_title {
+      padding: 5px 0 25px 12px;
+      position: relative;
+      @include before_circle;      
+   }
+   &_text{
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: 1.4rem;
+      line-height: 1.5;
+
+   }
+   &_skills {
+      display: flex;
+      flex-wrap: wrap;
+      &_item {
+         width: 50%;
+         display: flex;
+         justify-content: space-between;      
+         padding-right: 50px;
+         padding-bottom: 20px;
+      }
+      &_title {
+         padding-bottom: 5px;
+      }
+      &_circle{
+         width: 80%;
+         position: relative;
+         padding-right: 20px;
+         @include before_circle;
+         &:before{
+            top: 0;
+         }
+         img{
+            padding-left: 20px;
+            padding-top: 15px;
+         }
+      }
+   }
+
 }
+

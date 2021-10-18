@@ -1,7 +1,12 @@
 .title{
+   font-family: $main-fonts;
    font-weight: bold;
    font-size: 3.6rem;
    line-height: 1.25 ;
+   &_fz12{
+      font-size: 1.2rem;
+      line-height: 1.5 ;
+   }
    &_fz14{
       font-size: 1.4rem;
       line-height: 1.5 ;
