@@ -1,3 +1,92 @@
 .resume{
    @extend .site_width;
-}
+
+   padding-top: 120px;
+   &_title{
+      padding-top: 5px;
+      text-align: center;
+      position: relative;
+      @include before_circle;
+      &::before {
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);  
+      }
+   }
+   &_subtitle{
+      text-align: center;
+   }
+
+   &_wrapper{
+      display: grid;
+      padding: 60px 65px 0 65px;
+      grid-template-columns: repeat(2, 425px);
+      column-gap: 135px;
+
+   }
+   &_column{
+      &_title{
+         position: relative;
+         padding-left: 35px;
+         &::before{
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background: $main-color;
+         }
+      }
+      ul {
+         li{
+            position: relative;
+            &::after{
+               content: '';
+               width: 1px;
+               height: calc(100% + 8px);
+               position: absolute;
+               top: -8px;
+               left: 0;
+               background-color: $color06;
+            } 
+         }
+      }
+   }
+   &_item{
+      position: relative;
+      &::before{
+         content: '';
+         position: absolute;
+         height: 1px;
+         width: 40px;
+         top: 68px;
+         background-color: $color06;
+      } 
+      &_head{
+         position: relative;
+         padding: 45px 0 0 100px;         
+      }
+      &_body{
+         padding-left: 43px;
+         margin-top: 12px;
+      }
+      &_icon{    
+         width: 25px;
+         position: absolute;
+         top: 50px;
+         left: 40px; 
+         @include before_circle;
+         img{
+            position: absolute;
+            top: 15px;
+            left: 20px; 
+            // margin-top: 15px;
+            // margin-left: 20px;
+         }     
+      }
+   }
+} 
+
