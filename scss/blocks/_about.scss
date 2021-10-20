@@ -2,7 +2,6 @@
    @extend .site_width;
 
    padding-top: 120px;
-   padding-bottom: 120px;
    display: flex;
 
    justify-content: space-evenly;
@@ -16,7 +15,7 @@
    } 
    &_description{
       .divider{
-         margin-top: 0;
+         margin: 0;
       }
    }
    &_title {
